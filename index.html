@@ -5,41 +5,180 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
 <title>Señor Sourpatch Weekend AstroFi – Feb 13–15, 2026</title>
 <style>
-body{margin:0;font-family:'Helvetica Neue',Arial,sans-serif;background:#0a0a23;color:#f0e6d2;line-height:1.55;text-align:center;min-height:100vh}
-.container{max-width:800px;margin:0 auto;background:linear-gradient(135deg,#0f0c29,#1a1a2e,#16213e);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.5);position:relative}
-.header-img{width:100%;height:auto;display:block}
-.content{padding:20px;text-align:justify}
-.header-text{margin:26px 0 24px;text-align:center}
-h1{font-size:2.3rem;margin:0;color:#ffd700;text-shadow:0 2px 4px rgba(0,0,0,.6);letter-spacing:.6px}
-h1 span{display:block;font-size:1.2rem;color:#ffcc00;margin-top:6px;letter-spacing:1px}
-.intro{font-size:1.05rem;margin-bottom:22px;color:#e0e0e0}
-.sign{background:rgba(255,255,255,.14);border-radius:12px;padding:14px;margin-bottom:14px;text-align:left}
-.sign h2{font-size:1.2rem;margin:0 0 6px;color:#ffd700}
-.sign p{margin:6px 0;font-size:1.05rem;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.7)}
-.panel {
-  margin-top: 8px;                  /* reduced from 26px for less float */
-  padding: 10px 10px;
-  background: rgba(0,0,0,.3);        /* same dark semi-transparent */
-  border-radius: 10px;               /* rounded corners on both */
-  border: 1px solid rgba(255,215,0,.25); /* subtle gold border like president had */
-  font-size:1rem;                 /* slightly larger for readability */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #0a0a23;
+  color: #f0e6d2;
+  line-height: 1.55;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #0f0c29, #1a1a2e, #16213e);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  position: relative;
+}
+
+.header-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  padding: 20px;
+  text-align: justify;
+}
+
+.header-text {
+  margin: 26px 0 24px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin: 0;
+  color: #ffd700;
+  text-shadow: 0 2px 4px rgba(0,0,0,.6);
+  letter-spacing: .6px;
+}
+
+h1 span {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffcc00;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+.intro {
+  font-size: 1.05rem;
+  margin-bottom: 22px;
+  color: #e0e0e0;
+}
+
+.sign {
+  background: rgba(255,255,255,.14);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.sign h2 {
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+  color: #ffd700;
+}
+
+.sign p {
+  margin: 6px 0;
+  font-size: 1.05rem;
   color: #fff;
-  line-height: 1.03;                 /* tighter than body default */
+  text-shadow: 0 1px 2px rgba(0,0,0,.7);
+}
+
+/* Shared tight panel style for President's Day + Footer */
+.panel {
+  margin: 12px 0;                    /* reduced top/bottom space */
+  padding: 12px 16px;                /* tighter padding → condensed text */
+  background: rgba(0,0,0,.35);       /* darker for better contrast */
+  border-radius: 10px;
+  border: 1px solid rgba(255,215,0,.3);
+  font-size: 0.92rem;
+  line-height: 1.38;                 /* tighter lines – no floating text */
+  color: #fff;
   box-sizing: border-box;
 }
-.tip{font-weight:bold;color:#ffcc00}
-.president{background:rgba(255,215,0,.1);border:1px solid rgba(255,215,0,.35)}
- optin{background:rgba(255,255,255,.08);border:1px solid rgba(255,215,0,.25);border-radius:12px;padding:16px;margin-top:18px;text-align:center}
-.optin input{padding:10px;width:70%;max-width:300px;border-radius:6px;border:none;margin-top:8px}
-.optin button{padding:10px 16px;margin-top:10px;border:none;border-radius:6px;background:#ffd700;color:#000;font-weight:bold;cursor:pointer} 
-.footer {margin-top: 20px;padding: 20px;background: rgba(255,215,0,.1);border: 1px solid rgba(255,215,0,.35);font-size:1.05rem;color: #fff;}
-.hashtag{color:#ffcc00;font-weight:bold}
-.watermark{position:absolute;bottom:10px;right:14px;font-size:10px;color:rgba(255,255,255,0.06);pointer-events:none;user-select:none;letter-spacing:.5px}
-@media(max-width:600px){
-h1{font-size:1.85rem}
-h1 span{font-size:1.05rem}
-.content{padding:15px}
-.optin input{width:90%}
+
+/* Specific overrides only if needed (e.g., President's Day heading stays gold) */
+.panel h2 {
+  color: #ffd700;
+  margin: 0 0 10px;
+}
+
+.panel p {
+  margin: 8px 0;
+}
+
+/* Tip stays gold */
+.tip {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Opt-in section */
+.optin {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,215,0,.25);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.optin input {
+  padding: 10px;
+  width: 70%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: none;
+  margin-top: 8px;
+  color: #000; /* black text so typing is readable */
+}
+
+.optin button {
+  padding: 10px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer – now uses .panel (no separate rule needed) */
+.footer {
+  /* Inherits from .panel – no extra margin-top needed */
+}
+
+/* Hashtag & watermark */
+.hashtag {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.06);
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: .5px;
+}
+
+/* Mobile tightening */
+@media (max-width: 600px) {
+  h1 { font-size: 1.85rem; }
+  h1 span { font-size: 1.05rem; }
+  .content { padding: 15px; }
+  .panel { 
+    padding: 10px 14px;
+    margin: 10px 0;
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+  .optin input { width: 90%; }
 }
 </style>
 </head>
