@@ -3,304 +3,275 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-<title>Señor Sourpatch Weekend AstroFi – Feb 13–15, 2026</title>
+<title>Señor Sourpatch Weekend AstroFi – Feb 21–22, 2026</title>
 <style>
 body {
-  margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background: #0a0a23;
-  color: #f0e6d2;
-  line-height: 1.55;
-  text-align: center;
-  min-height: 100vh;
+  margin:0;
+  font-family:'Helvetica Neue',Arial,sans-serif;
+  background:#0a0a23;
+  color:#fff; /* ← All body text defaults to white */
+  line-height:1.55;
+  text-align:center;
+  min-height:100vh;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, #0f0c29, #1a1a2e, #16213e);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.5);
-  position: relative;
+  max-width:800px;
+  margin:0 auto;
+  background:linear-gradient(135deg,#0f0c29,#1a1a2e,#16213e);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+  position:relative;
 }
 
 .header-img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width:100%;
+  height:auto;
+  display:block;
 }
 
 .content {
-  padding: 20px;
-  text-align: justify;
+  padding:20px;
+  text-align:justify;
 }
 
 .header-text {
-  margin: 26px 0 24px;
-  text-align: center;
+  margin:26px 0 22px;
+  text-align:center;
 }
 
 h1 {
-  font-size: 2.3rem;
-  margin: 0;
-  color: #ffd700;
-  text-shadow: 0 2px 4px rgba(0,0,0,.6);
-  letter-spacing: .6px;
+  font-size:2.3rem;
+  margin:0;
+  color:#ffd700; /* Gold heading */
+  text-shadow:0 2px 4px rgba(0,0,0,.6);
+  letter-spacing:.6px;
 }
 
 h1 span {
-  display: block;
-  font-size: 1.2rem;
-  color: #ffcc00;
-  margin-top: 6px;
-  letter-spacing: 1px;
+  display:block;
+  font-size:1.2rem;
+  color:#ffcc00; /* Gold subheading */
+  margin-top:6px;
+  letter-spacing:1px;
 }
 
 .intro {
-  font-size: 1.05rem;
-  margin-bottom: 22px;
-  color: #e0e0e0;
+  font-size:1.05rem;
+  margin-bottom:18px;
+  color:#fff; /* White intro text */
 }
 
 .sign {
-  background: rgba(255,255,255,.14);
-  border-radius: 12px;
-  padding: 14px;
-  margin-bottom: 14px;
-  text-align: left;
+  background:rgba(255,255,255,.14);
+  border-radius:12px;
+  padding:14px;
+  margin-bottom:12px;
+  text-align:left;
 }
 
 .sign h2 {
-  font-size: 1.2rem;
-  margin: 0 0 6px;
-  color: #ffd700;
+  font-size:1.25rem;
+  margin:0 0 5px;
+  color:#ffd700; /* Gold sign headings */
 }
 
 .sign p {
-  margin: 6px 0;
-  font-size: 1.05rem;
+  margin:5px 0;
+  font-size:1.02rem;
+  color:#fff; /* White sign body text */
+  text-shadow:0 1px 2px rgba(0,0,0,.7);
+}
+
+em.gold-white {
   color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,.7);
+  font-style: italic;
 }
 
-/* Shared tight panel style for President's Day + Footer */
-.panel {
-  margin: 12px 0;                    /* reduced top/bottom space */
-  padding: 12px 16px;                /* tighter padding → condensed text */
-  background: rgba(0,0,0,.35);       /* darker for better contrast */
-  border-radius: 10px;
-  border: 1px solid rgba(255,215,0,.3);
-  font-size: 0.92rem;
-  line-height: 1.38;                 /* tighter lines – no floating text */
-  color: #fff;
-  box-sizing: border-box;
-}
-
-/* Specific overrides only if needed (e.g., President's Day heading stays gold) */
-.panel h2 {
-  color: #ffd700;
-  margin: 0 0 10px;
-}
-
-.panel p {
-  margin: 8px 0;
-}
-
-/* Tip stays gold */
 .tip {
-  font-weight: bold;
-  color: #ffcc00;
+  font-weight:bold;
+  color:#ffcc00; /* Gold tips – already correct */
 }
 
-/* Opt-in section */
 .optin {
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,215,0,.25);
-  border-radius: 12px;
-  padding: 16px;
-  margin-top: 18px;
-  text-align: center;
-  color: #fff;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,215,0,.25);
+  border-radius:12px;
+  padding:16px;
+  margin-top:16px;
+  text-align:center;
+  color:#fff; /* White opt-in text */
+}
+
+.optin h2 {
+  color:#ffd700; /* Gold opt-in heading */
+  margin:0 0 6px;
 }
 
 .optin input {
-  padding: 10px;
-  width: 70%;
-  max-width: 300px;
-  border-radius: 6px;
-  border: none;
-  margin-top: 8px;
-  color: #000; /* black text so typing is readable */
+  padding:10px;
+  width:70%;
+  max-width:320px;
+  border-radius:6px;
+  border:none;
+  margin-top:8px;
+  color:#000; /* Black input text for readability */
 }
 
 .optin button {
-  padding: 10px 16px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 6px;
-  background: #ffd700;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
+  padding:10px 16px;
+  margin-top:10px;
+  border:none;
+  border-radius:6px;
+  background:#ffd700;
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
 }
-
-/* Footer – now uses .panel (no separate rule needed) */
+Footer-specific tweaks (if needed) */
 .footer {
-  /* Inherits from .panel – no extra margin-top needed */
+  margin-top: 16px;                  /* slightly more space above footer only */
+  padding: 12px 14px;
+  text-align: center;                /* optional: center footer text */;	
 }
 
-/* Hashtag & watermark */
 .hashtag {
-  color: #ffcc00;
-  font-weight: bold;
+  color:#ffcc00; /* Gold hashtags – already correct */
+  font-weight:bold;
 }
 
 .watermark {
-  position: absolute;
-  bottom: 10px;
-  right: 14px;
-  font-size: 10px;
-  color: rgba(255,255,255,0.06);
-  pointer-events: none;
-  user-select: none;
-  letter-spacing: .5px;
+  position:absolute;
+  bottom:10px;
+  right:14px;
+  font-size:8px;
+  color:rgba(255,255,255,0.06);
+  pointer-events:none;
+  user-select:none;
+  letter-spacing:.5px;
 }
 
-/* Mobile tightening */
-@media (max-width: 600px) {
-  h1 { font-size: 1.85rem; }
-  h1 span { font-size: 1.05rem; }
-  .content { padding: 15px; }
-  .panel { 
-    padding: 10px 14px;
-    margin: 10px 0;
-    font-size: 0.88rem;
-    line-height: 1.35;
-  }
-  .optin input { width: 90%; }
+@media(max-width:600px){
+  h1{font-size:1.85rem}
+  h1 span{font-size:1.05rem}
+  .content{padding:15px}
+  .optin input{width:90%}
 }
 </style>
 </head>
 <body>
 <div class="container">
-
 <img src="https://assets.zyrosite.com/m5KLQk5MGQiKzp2g/spatch.newtreatmentii-MLAVXH9VI3F7hZKr.png"
 alt="Señor Sourpatch – Desert Deals. No Mercy."
 class="header-img"/>
-
 <div class="content">
-
 <div class="header-text">
-<h1>Señor Sourpatch’s Weekend AstroFi
-<span>President's Day Holiday February 13–16, 2026</span></h1>
+<h1>Weekend AstroFi by Señor Sourpatch
+<span>February 21–22, 2026</span></h1>
 </div>
-
 <p class="intro">
-Listen up, my fellow deal hounds and desert associates - the wind’s shiftin’, the stars are speakin’ and the money’s waitin’ to be claimed. No mercy. No excuses. The Sun continues to advance through ♒ Aquarius — sign of architects, reformers, and sovereign thinkers.
-Mercury aligns with Saturn, forming a disciplined current of intellectual authority.
-Venus in Capricorn refines desire into structure.
+¡Órale, mi gente! Sourpatch here — cigar glowing soft, eye fixed on the heavens, heart open to what’s coming.
+The stars aren’t just speaking — they’re guiding. And I’ve learned one thing in all my years under this wide sky: when you trust the cosmic instinct, the path lights up. ☀️ The Sun now moves through ♓ Pisces — ruler of intuition, liquidity, and unseen currents.
+♄ Saturn whispers discipline beneath emotion.
+♆ Neptune reminds us that not everything glittering is value.
 <br><br>
-Hermetic law teaches: <strong style="color:#ffd700;">As above, so below.</strong></em>
-The geometry of the heavens reflects the geometry of your balance sheet.
-This weekend is not for impulse. It is for initiation.
+And on 2/22 — the Master Builder vibration — the cosmos favors those who architect wealth rather than chase it.
+<br><br>
+  <span style="font-weight:bold; color:#ffd700;">Cosmic Law: </span>
+  <em class="gold-white">Nothing is at rest; everything vibrates. Every thought, emotion, object, and being has its own vibratory frequency. Higher vibrations correspond to higher states of consciousness, health, and harmony.</em>
 </p>
 
 <div class="sign">
-<h2>♈ Aries — The Initiator</h2>
-<p>Aquarius governs your alliances. Strategic partnerships become power corridors. Speak with restraint; Saturn rewards measured dominance.</p>
-<p class="tip">♂ Action becomes profitable when governed by discipline.</p>
+<h2>♈ Aries</h2>
+<p>With the Sun in Pisces activating your 12th house, capital moves through unseen channels. This is not a week for visible aggression but for intelligence gathering. Saturn reminds you that premature action fractures structure. Study liquidity trends, sentiment shifts, and competitor positioning before deploying capital.</p>
+<p class="tip">The Hermetic law of Cause and Effect applies: prepare quietly now to strike precisely later.</p>
 </div>
-
 <div class="sign">
-<h2>♉ Taurus — The Builder</h2>
-<p>The 10th house of authority activates. Reputation converts to revenue. Rosicrucian principle: true wealth is constructed quietly.</p>
-<p class="tip">♀ Increase valuation through composure, not noise.</p>
+<h2>♉ Taurus</h2>
+<p>Collective energy influences your financial trajectory. Pisces dissolves rigid control; Saturn demands disciplined alliance. Wealth compounds through structured partnerships, not isolated accumulation. Evaluate who strengthens your architecture — and who subtly drains it.</p>
+<p class="tip">Strategic alignment is leverage. Choose partners as carefully as assets.</p>
 </div>
-
 <div class="sign">
-<h2>♊ Gemini — The Messenger</h2>
-<p>Mercury sharpens language into leverage. Contracts, intellectual property, negotiations favor precision. Words now carry financial gravity.</p>
-<p class="tip">☿ Refined communication multiplies capital.</p>
+<h2>♊ Gemini</h2>
+<p>Your public positioning carries valuation consequences. Neptune can blur messaging, so clarity becomes currency. Saturn rewards disciplined communication — tighten proposals, quantify outcomes, remove exaggeration. Authority increases when language is measured.</p>
+<p class="tip">Precision in speech elevates perceived market value.</p>
 </div>
-
 <div class="sign">
-<h2>♋ Cancer — The Guardian</h2>
-<p>Shared assets demand structure. Emotional clarity stabilizes material exchange. Protect what feeds your lineage.</p>
-<p class="tip">☽ Boundaries create prosperity.</p>
+<h2>♋ Cancer</h2>
+<p>Long-range financial vision expands under Pisces intuition, but Saturn tests sustainability. Reassess asset allocation through a structural lens: does this position endure volatility? Emotional conviction must be supported by balance-sheet logic.</p>
+<p class="tip">Security is engineered, not felt.</p>
 </div>
-
 <div class="sign">
-<h2>♌ Leo — The Sovereign</h2>
-<p>Opposition from Aquarius reveals partnership power dynamics. Share influence wisely; command through intelligence, not ego.</p>
-<p class="tip">☉ Authority deepens when collaboration is strategic.</p>
+<h2>♌ Leo</h2>
+<p>Shared capital and joint ventures demand transparency. Neptune may obscure true valuations — conduct due diligence before signing agreements. The 2/22 Master Builder vibration emphasizes architectural wealth: contracts must support multi-year stability.</p>
+<p class="tip">Power resides in structural clarity, not dominance.</p>
 </div>
-
 <div class="sign">
-<h2>♍ Virgo — The Alchemist</h2>
-<p>Systems refinement yields financial alchemy. Efficiency becomes elegance. Structure your day like a ritual.</p>
-<p class="tip">☿ Small calibrations create exponential results.</p>
+<h2>♍ Virgo</h2>
+<p>Partnerships mirror your internal discipline. Saturn refines, Pisces softens — balance both. Review operational efficiency in collaborations. Are expectations codified? Are margins protected? Weak structure invites erosion.</p>
+<p class="tip">The Principle of Correspondence: outer partnerships reflect inner order.</p>
 </div>
-
 <div class="sign">
-<h2>♎ Libra — The Harmonizer</h2>
-<p>Creative ventures glow under Aquarian light. Yet Saturn insists: beauty must be engineered for sustainability.</p>
-<p class="tip">♀ Harmony is profitable when disciplined.</p>
+<h2>♎ Libra</h2>
+<p>Daily workflow influences revenue flow. Pisces highlights inefficiencies hidden beneath aesthetic harmony. Saturn demands pruning. Optimize systems, renegotiate vendor costs, tighten operational drift.</p>
+<p class="tip">Refinement converts elegance into earnings.</p>
 </div>
-
 <div class="sign">
-<h2>♏ Scorpio — The Strategist</h2>
-<p>Foundation work intensifies. Real estate, legacy planning, inheritance architecture surface. Hidden roots determine visible power.</p>
-<p class="tip">♇ Control the unseen structures.</p>
+<h2>♏ Scorpio</h2>
+<p>Speculation tempts under Neptune’s fog. Creative investments require forensic analysis. Separate narrative from numbers. Psychological markets move on emotion — disciplined investors move on structure.</p>
+<p class="tip">Trust intuition — but validate through data modeling.</p>
 </div>
-
 <div class="sign">
-<h2>♐ Sagittarius — The Philosopher</h2>
-<p>Communication channels expand. Influence markets through clarity of vision. Teach strategically.</p>
-<p class="tip">♃ Expansion without structure dissolves.</p>
+<h2>♐ Sagittarius</h2>
+<p>Foundational assets — property, long-term holdings, family capital — gain focus. The Master Builder frequency favors architectural planning over expansion. Strengthen base layers before reaching toward new horizons.</p>
+<p class="tip">Enduring wealth grows from reinforced foundations.</p>
 </div>
-
 <div class="sign">
-<h2>♑ Capricorn — The Executive</h2>
-<p>Venus in your sign magnifies magnetism. Standards dictate attraction. Luxury aligns with legacy.</p>
-<p class="tip">♄ Govern your value with precision.</p>
+<h2>♑ Capricorn</h2>
+<p>Communication channels influence revenue velocity. Saturn enhances authority when restraint is practiced. Speak less, structure more. Contracts, presentations, and strategic messaging shape financial perception.</p>
+<p class="tip">Command through disciplined articulation.</p>
 </div>
-
 <div class="sign">
-<h2>♒ Aquarius — The Visionary</h2>
-<p>Your solar return amplifies identity capital. Reinvention becomes revenue architecture. This is initiation energy.</p>
-<p class="tip">♅ Think centuries, not quarters.</p>
+<h2>♒ Aquarius</h2>
+<p>Income recalibration is required. Pisces may distort perceived value — Saturn demands realistic pricing. Audit your compensation structure. Underpricing signals insecurity; overpricing without structure invites resistance.</p>
+<p class="tip">Valuation must reflect both confidence and measurable output.</p>
 </div>
-
 <div class="sign">
-<h2>♓ Pisces — The Mystic</h2>
-<p>The unseen realm activates. Subconscious money beliefs rise for recalibration. Prepare privately; move decisively later.</p>
-<p class="tip">♆ Inner order precedes outer wealth.</p>
+<h2>♓ Pisces</h2>
+<p>Your solar season begins under a Saturn undertone. Vision expands, but discipline defines manifestation. The 2/22 builder frequency asks: what financial identity are you constructing? Illusion dissolves when strategy becomes measurable.</p>
+<p class="tip">Architect wealth with intuition guided by structure.</p>
 </div>
-
-<!-- President’s Day section – now uses .panel -->
-<div class="panel president">
-  <h2 style="color:#ffd700;">President’s Day — The Statesman’s Doctrine</h2>
-	<p>
-          President’s Day highlights themes of leadership, legacy, and long-term national wealth.
-          This is a powerful weekend to reflect on your personal financial governance.
-        </p>
-          Ask yourself:
-          Are you managing your resources like a short-term politician —
-          or like a long-term statesman?
-        </p>
-        <p class="tip">Leadership Rule: Wealth is built through disciplined vision, not emotional reaction.</p>
-      </div>
-
-<div class="optin" style="color:#fff;">
-  <h2 style="color:#ffd700;">Enter the Private Circle</h2>
-  <p>Follow Señor Sourpatch’s weekly AstroFi. Strategic Insight. No Noise. 
-  <p class="hashtag">#AstroFi #SeñorSourpatch #HermeticFinance #PresidentsDay</p>
-  <p><em>For entertainment purposes only. Consult a licensed financial professional before major decisions.</em></p>
+<div class="sign">
+  <h2>BONUS: Market Sector Intelligence – Into the week of Feb 23–27</h2>
+  <p><span style="font-weight:bold; color:#ffd700;">Equities: </span>Sentiment-driven rotation continues under Pisces influence. Narrative stocks may see temporary volatility as Neptune clouds valuation clarity. Saturn favors companies with strong balance sheets and durable cash flow over speculative momentum plays - Keep an eye on the 200 EMA. </p>
+  <p><span style="font-weight:bold; color:#ffd700;">Real Estate: </span> The Master Builder frequency highlights long-term property strategy. Stabilized assets outperform aggressive expansion. Refinancing structures and disciplined acquisition models are favored over rapid scaling.</p>
+  <p><span style="font-weight:bold; color:#ffd700;">Digital Assets: </span>  Neptune increases illusion risk. Separate technology utility from hype cycles. Volatility may create opportunity, but structure entry points carefully.</p>
+  <p><span style="font-weight:bold; color:#ffd700;">Private Capital/Entrprenurship </span>  Saturn rewards operational tightening. Optimize margins, renegotiate terms, reduce inefficiency. Architectural wealth is built through discipline — not velocity.</p>
+  <p class="tip">Theme of the Week: Build what endures. Liquidity follows structure.</p>
 </div>
-
+<div class="optin">
+<h2>Track the Transmission</h2>
+<p>
+Señor Sourpatch releases weekly AstroFi briefings — calibrated to the movement of markets and stars.
+</p>
+<p style="margin-top:8px;">
+Follow Señor Sourpatch on Facebook for real-time releases and future transmissions.
+</p>
+<p style="margin-top:6px;">
+<a href="https://www.facebook.com/senorsourpatch/" target="_blank" style="color:#ffd700;font-weight:bold;text-decoration:none;">
+→ Follow Señor Sourpatch
+</a>
+</p>
+</div>
+<div class="footer">
+  <p class="hashtag">#AstroFi #SeñorSourpatch #HermeticFinance #FinancialAstrology</p>
+  <p class="hashtag">www.facebook.com/senorsourpatch<p>
+  <p style="color: #fff;">
+  <em>For entertainment purposes only. Consult a licensed financial professional before major decisions.</em>
+</p>
+</div>
 <div class="watermark">© 2026 Señor Sourpatch</div>
-
 </div>
 </body>
 </html>
